@@ -9,10 +9,10 @@ function delay (time) {
 
 /**
  * Hides the old page elements and fades in the new
- * @param {*} oldText 
- * @param {*} oldImage 
- * @param {*} newText 
- * @param {*} newImage 
+ * @param {HTMLElement} oldText 
+ * @param {HTMLElement} oldImage 
+ * @param {HTMLElement} newText 
+ * @param {HTMLElement} newImage 
  */
 function hideAndFadeIn(oldText, oldImage, newText, newImage) {
   oldText.classList.remove("loaded");
