@@ -1,7 +1,19 @@
+/**
+ * Delays some future JS execution
+ * @param {Number} time in milliseconds
+ * @returns {Promise} a Promise to execute the function
+ */
 function delay (time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
 
+/**
+ * Hides the old page elements and fades in the new
+ * @param {*} oldText 
+ * @param {*} oldImage 
+ * @param {*} newText 
+ * @param {*} newImage 
+ */
 function hideAndFadeIn(oldText, oldImage, newText, newImage) {
   oldText.classList.remove("loaded");
   oldImage.classList.remove("loaded");
@@ -17,7 +29,10 @@ function hideAndFadeIn(oldText, oldImage, newText, newImage) {
   delay(300).then(() => oldImage.classList.add("hidden"));
 }
 
-
+/**
+ * Transition from title page to question 1
+ * @param {event} event button submit event
+ */
 function goToQ1(event) {
   event.preventDefault();
   const oldText = document.getElementById("title");
@@ -27,6 +42,9 @@ function goToQ1(event) {
   hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
+/**
+ * Transition from question 1 to question 2
+ */
 function goToQ2() {
   const oldText = document.getElementById("q1-text");
   const oldImage = document.getElementById("q1-img");
@@ -35,6 +53,9 @@ function goToQ2() {
   hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
+/**
+ * Transition from question 2 to question 3
+ */
 function goToQ3() {
   const oldText = document.getElementById("q2-text");
   const oldImage = document.getElementById("q2-img");
@@ -43,6 +64,9 @@ function goToQ3() {
   hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
+/**
+ * Transition from question 3 to question 4
+ */
 function goToQ4() {
   const oldText = document.getElementById("q3-text");
   const oldImage = document.getElementById("q3-img");
@@ -51,6 +75,9 @@ function goToQ4() {
   hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
+/**
+ * Transition from question 4 to question 5
+ */
 function goToQ5() {
   const oldText = document.getElementById("q4-text");
   const oldImage = document.getElementById("q4-img");
@@ -59,6 +86,9 @@ function goToQ5() {
   hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
+/**
+ * Transition from question 5 to results page
+ */
 function goToResult() {
   const oldText = document.getElementById("q5-text");
   const oldImage = document.getElementById("q5-img");
@@ -78,6 +108,9 @@ function goToResult() {
   displayResult()
 }
 
+/**
+ * Computes result and unhides relevant page elements
+ */
 function displayResult() {
   const platform = localStorage.platform;
   const exp = localStorage.exp;
@@ -128,10 +161,12 @@ function displayResult() {
   );
 }
 
+/**
+ * Assigns event handlers upon page load
+ */
 window.onload = function () {
   const titleButton = document.getElementById("start-btn");
   titleButton.addEventListener("click", goToQ1);
-
 
   let form1 = document.getElementsByName("platform")
   for (let selection of form1) {
@@ -172,5 +207,4 @@ window.onload = function () {
       goToResult()
     })
   }
-
 }
