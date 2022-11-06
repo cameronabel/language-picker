@@ -162,7 +162,7 @@ function displayResult() {
 }
 
 /**
- * Assigns event handlers upon page load
+ * Assigns event listeners upon page load
  */
 window.onload = function () {
   const titleButton = document.getElementById("start-btn");
