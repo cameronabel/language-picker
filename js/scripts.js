@@ -5,11 +5,11 @@ function goToQ1 (event) {
   const newImage = document.getElementById("q1-img");
   const newText = document.getElementById("q1-text")
   
-  oldText.classList.toggle("loaded")
+  oldText.classList.remove("loaded")
   oldText.classList.add("hidden")
   newImage.classList.add("loaded")
   newImage.classList.remove("hidden")
-  oldImage.classList.toggle("loaded")
+  oldImage.classList.remove("loaded")
   oldImage.classList.add("hidden")
   newText.classList.remove('hidden')
   newText.classList.add('loaded')
@@ -21,14 +21,14 @@ function goToQ2 () {
   const newImage = document.getElementById("q2-img");
   const newText = document.getElementById("q2-text");
   
-  oldText.classList.toggle("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.toggle("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  oldText.classList.remove("loaded")
+  oldText.classList.add("hidden")
+  newImage.classList.add("loaded")
+  newImage.classList.remove("hidden")
+  oldImage.classList.remove("loaded")
+  oldImage.classList.add("hidden")
+  newText.classList.remove('hidden')
+  newText.classList.add('loaded')
 }
 
 function goToQ3 () {
@@ -37,14 +37,14 @@ function goToQ3 () {
   const newImage = document.getElementById("q3-img");
   const newText = document.getElementById("q3-text");
   
-  oldText.classList.toggle("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.toggle("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  oldText.classList.remove("loaded")
+  oldText.classList.add("hidden")
+  newImage.classList.add("loaded")
+  newImage.classList.remove("hidden")
+  oldImage.classList.remove("loaded")
+  oldImage.classList.add("hidden")
+  newText.classList.remove('hidden')
+  newText.classList.add('loaded')
 }
 
 function goToQ4 () {
@@ -53,14 +53,14 @@ function goToQ4 () {
   const newImage = document.getElementById("q4-img");
   const newText = document.getElementById("q4-text");
   
-  oldText.classList.toggle("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.toggle("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  oldText.classList.remove("loaded")
+  oldText.classList.add("hidden")
+  newImage.classList.add("loaded")
+  newImage.classList.remove("hidden")
+  oldImage.classList.remove("loaded")
+  oldImage.classList.add("hidden")
+  newText.classList.remove('hidden')
+  newText.classList.add('loaded')
 }
 
 function goToQ5 () {
@@ -69,15 +69,39 @@ function goToQ5 () {
   const newImage = document.getElementById("q5-img");
   const newText = document.getElementById("q5-text");
   
-  oldText.classList.toggle("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.toggle("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  oldText.classList.remove("loaded")
+  oldText.classList.add("hidden")
+  newImage.classList.add("loaded")
+  newImage.classList.remove("hidden")
+  oldImage.classList.remove("loaded")
+  oldImage.classList.add("hidden")
+  newText.classList.remove('hidden')
+  newText.classList.add('loaded')
 }
+
+function goToResult () {
+  const oldText = document.getElementById("q5-text");
+  const oldImage = document.getElementById("q5-img");
+  const leftDiv = document.getElementById("left-half");
+  const rightDiv = document.getElementById("right-half");
+
+  
+  oldText.classList.remove("loaded")
+  oldText.classList.add("hidden")
+  oldImage.classList.remove("loaded")
+  oldImage.classList.add("hidden")
+  leftDiv.classList.remove("loaded")
+  leftDiv.classList.add("hidden")
+  rightDiv.classList.remove("loaded")
+  rightDiv.classList.add("hidden")
+  displayResult()
+}
+
+function displayResult() {
+  const platform = localStorage.platform
+  console.log(platform)
+}
+
 
 window.onload = function () {
   const titleButton = document.getElementById("start-btn");
@@ -112,6 +136,14 @@ window.onload = function () {
     selection.addEventListener('click', function () {
       localStorage.game = selection.value
       goToQ5()
+    })
+  }
+
+  let form5 = document.getElementsByName("popular")
+  for (let selection of form5) {
+    selection.addEventListener('click', function () {
+      localStorage.popular = selection.value
+      goToResult()
     })
   }
 

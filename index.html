@@ -8,7 +8,7 @@
 <body>
   <div class="container">
 
-    <div class="left half column loaded">
+    <div id="left-half" class="left half column loaded">
       <div id="title" class="title loaded">
         <h1>What's my ideal programming language?</h1>
         <p>Take this short quiz to find out!</p>
@@ -40,16 +40,20 @@
         <p>Sometimes that really <em>is</em> the question.</p>
         <p>Are you interested in game development?</p>
         <form id="q4">
-          <input type="radio" id="yes" name="game" value="yes">
-          <label for="yes"><span class="btn response">Game on!</button></label>
-          <input type="radio" id="no" name="game" value="no">
-          <label for="no"><span class="btn response">No</button></label>
+          <input type="radio" id="gamer" name="game" value="gamer">
+          <label for="gamer"><span class="btn response">Game on!</button></label>
+          <input type="radio" id="non-gamer" name="game" value="non-gamer">
+          <label for="non-gamer"><span class="btn response">No</button></label>
         </form>
-      </div> <!-- end q2 text -->
+      </div> <!-- end q4 text -->
+
+      <div id="q5-img" class="hidden">
+        <img src="img/q5-image.jpg" class="fill">
+      </div> <!-- end q5 image -->
 
     </div> <!-- end left half -->
 
-    <div class="right half column loaded">
+    <div id="right-half" class="right half column loaded">
       <div id="title-image" class="loaded">
         <img src="img/title-image.jpg" class="fill">
       </div> <!-- end title image -->
@@ -88,8 +92,40 @@
       <div id="q4-img" class="hidden">
         <img src="img/q4-image.jpg" class="fill">
       </div> <!-- end q4 image -->
+    
+      <div id="q5-text" class="question-text right hidden">
+        <h2>Obscure vs Mainstream</h2>
+        <p>Are you someone who just <em>has</em> to be different? Buck the trends by learning an obscure, esoteric, or obsolete language that forces you to think outside the box. It might not look great on a resume, but it also just might make you a better programmer.</p>
+        <form id="q5">
+          <input type="radio" id="obscure" name="popular" value="obscure">
+          <label for="obscure"><span class="btn response">Obscure</button></label>
+          <input type="radio" id="mainstream" name="popular" value="mainstream">
+          <label for="mainstream"><span class="btn response">Mainstream</button></label>
+        </form>
+      </div> <!-- end q5 text -->
 
     </div> <!-- end right half -->
+
+    <div id="results" class="hidden">
+      <h2>Your ideal programming language <em>may</em> be...</h2>
+      <div id="python" class="hidden">
+        <h1>Python</h1>
+      </div> <!-- end python -->
+      <div id="C/C#" class="hidden">
+        <h1>C/C#</h1>
+      </div> <!-- end C -->
+      <div id="javascript" class="hidden">
+        <h1>JavaScript</h1>
+      </div> <!-- end javascript -->
+      <div id="brainfuck" class="hidden">
+        <h1>Brainfuck</h1>
+      </div> <!-- end brainfuck -->
+      <div id="ruby" class="hidden">
+        <h1>Python</h1>
+      </div> <!-- end ruby -->
+
+
+    </div><!-- end results -->
 
   </div> <!-- end container -->
 </body>
