@@ -1,52 +1,50 @@
-# _{Application Name}_
+# _Programming Language Picker_
 
-#### By _**{List of contributors}**_
+#### By _**Cameron Abel**_
 
-#### _{Brief description of application}_
+#### _Short quiz to help select a programming language_
 
 ## Technologies Used
 
-- _List all_
-- _the major technologies_
-- _you used in your project_
-- _here_
+- HTML
+- CSS
+- JavaScript
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This site uses a short questionnaire to determine which programming language may best suit the needs of the user.
 
 ## Setup/Installation Requirements
 
-- _This is a great place_
-- _to list setup instructions_
-- _in a simple_
-- _easy-to-understand_
-- _format_
+This site may be accessed on [GitHub pages](https://cameronabel.github.io/language-picker/). To host this site locally:
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+- Clone this repository to your local machine
+- Navigate to the top level directory
+- Open `index.html` in your browser
+
+Once active, simply answer the questions posed by the quiz and view your result at the end. Start over to try again and see different results.
 
 ## Known Bugs
 
-- _Any known issues_
-- _should go here_
+- More JS refactoring is needed, but the existing JS should be fully functional.
+- Transition bodges should be pruned to be more concise and consistent
+
+## Image Sources
+
+Title Photo by [Safar Safarov](https://unsplash.com/@safarslife?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Question 1 Photo by [Neil Soni](https://unsplash.com/@neilsoniphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/mobile-phone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Question 2 Photo by [Kevin Canlas](https://unsplash.com/@kvncnls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/coders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Question 3 Photo by [Lorenzo Herrera](https://unsplash.com/@lorenzoherrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/retro-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Question 4 Photo by [Alexey Savchenko](https://unsplash.com/@alexxsvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
+
+Question 5 Photo by [Devilz .](https://unsplash.com/@devilbitez?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText) on [Unsplash](https://unsplash.com/s/photos/weird?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText)
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns. Encourage them to contact you or make a contribution to the code.}_
+[MIT](https://opensource.org/licenses/MIT)
 
-Copyright (c) _date_ _author name(s)_
-
-title
-Photo by <a href="https://unsplash.com/@safarslife?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Safar Safarov</a> on <a href="https://unsplash.com/s/photos/coding?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-q1
-Photo by <a href="https://unsplash.com/@neilsoniphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neil Soni</a> on <a href="https://unsplash.com/s/photos/mobile-phone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-q2
-Photo by <a href="https://unsplash.com/@kvncnls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Canlas</a> on <a href="https://unsplash.com/s/photos/coders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-q3
-Photo by <a href="https://unsplash.com/@lorenzoherrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Herrera</a> on <a href="https://unsplash.com/s/photos/retro-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-
-q4
-Photo by <a href="https://unsplash.com/@alexxsvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexey Savchenko</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+Copyright (c) _2022_ _Cameron Abel_
