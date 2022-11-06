@@ -6,8 +6,8 @@ body {
   padding: 0;
   font-family: 'Merriweather', serif;
   font-size: 20;
-  color: #E3D0D3;
-  background-color: #935143;
+  color: #EEEEEE;
+  background-color: #292929;
 }
 
 .hidden {
@@ -25,7 +25,6 @@ body {
 }
 
 .half {
-  background-color: #935143;
   height: 100vh;
   width: 50%;
   opacity: 0;
@@ -84,9 +83,9 @@ h2 {
 .btn {
   border: none;
   border-radius: 4px;
-  background-color: #4D3336;
+  background-color: #35b7ff;
   font-family: inherit;
-  color: #E3D0D3
+  color: #191919;
 }
 
 .title .btn {
@@ -95,7 +94,7 @@ h2 {
 
 .btn:hover {
   cursor: pointer;
-  background-color: #745A5D;
+  background-color: #FA7D09;
 }
 
 .question-text {
@@ -117,8 +116,6 @@ input[type="radio"] {
   margin-left: 1vw;
   display:inline-block;
   border:4px;
-  background-color: #4D3336;
-  color: #E3D0D3;
   padding: 5px;
   text-align: center;
 }
