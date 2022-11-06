@@ -8,16 +8,38 @@
 <body>
   <div class="container">
 
-  <div id="right-half" class="column half right">
-    <img src="img/title-image.jpg" class="fill">
-  </div>
-  <div id="left-half" class="column half left">
-    <div class="title">
-      <h1>What's my ideal programming language?</h1>
-      <p>Take this short quiz to find out!</p>
-      <p><button class="btn" id="click-here-btn">Start</button></p>
-    </div>
-  </div>
-</div>
+    <div id="left-half" class="column half loaded">
+      <div id="title" class="title">
+        <h1>What's my ideal programming language?</h1>
+        <p>Take this short quiz to find out!</p>
+        <p><button class="btn" id="start-btn">Start</button></p>
+      </div> <!-- end title -->
+      
+      <img id="q1-img" src="img/q1-image.jpg" class="fill hidden">
+
+    </div> <!-- end left half -->
+
+
+    <div class="right-half">
+      <div id="title-image" class="column half loaded">
+        <img src="img/title-image.jpg" class="fill">
+      </div> <!-- end title image -->
+      <div id="q1-text" class="question-text right hidden">
+        <h2>Would you like to work on mobile platforms?</h2>
+        <p>Some developers enjoy working on Android or iOS applications, while others prefer desktop applications.</p>
+        <p>Some eschew the idea of a platform at all and stick to web applications.</p>
+        <p>Which are you?</p>
+        <form id="q1">
+          <input type="radio" id="mobile" name="platform" value="Mobile">
+          <label for="mobile"><button class="btn response">Mobile</button></label>
+          <input type="radio" id="desktop" name="platform" value="Desktop">
+          <label for="mobile"><button class="btn response">Desktop</button></label>
+          <input type="radio" id="mobile" name="platform" value="Mobile">
+          <label for="mobile"><button class="btn response">Web Only</button></label>
+        </form>
+      </div>
+    </div><!-- end right half -->
+
+  </div> <!-- end container -->
 </body>
 </html>
