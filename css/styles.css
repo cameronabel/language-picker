@@ -95,6 +95,7 @@ h2 {
 
 .btn:hover {
   cursor: pointer;
+  background-color: #745A5D;
 }
 
 .question-text {
