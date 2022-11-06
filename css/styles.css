@@ -36,6 +36,7 @@ body {
 .loaded {
   opacity: 1;
   transition: all 1000ms linear;
+  z-index: 10;
 }
 
 .container {
@@ -104,6 +105,12 @@ input[type="radio"] {
 
 .response {
   font-size: calc(.8em + .05vw);
-  width: 27%;
-  margin-left: -5%;
+  width: 8vw;
+  margin-left: 1vw;
+  display:inline-block;
+  border:4px;
+  background-color: #4D3336;
+  color: #E3D0D3;
+  padding: 5px;
+  text-align: center;
 }
