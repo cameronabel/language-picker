@@ -1,18 +1,30 @@
+function delay (time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+function hideAndFadeIn(oldText, oldImage, newText, newImage) {
+  oldText.classList.remove("loaded");
+  oldImage.classList.remove("loaded");
+  newImage.classList.add("loaded");
+  newText.classList.add('loaded');
+  newImage.classList.remove("hidden");
+  newText.classList.remove('hidden');
+  newImage.classList.remove("invisible");
+  newText.classList.remove('invisible');
+  oldText.classList.add("invisible")
+  oldImage.classList.add("invisible")
+  delay(300).then(() => oldText.classList.add("hidden"));
+  delay(300).then(() => oldImage.classList.add("hidden"));
+}
+
+
 function goToQ1(event) {
   event.preventDefault();
   const oldText = document.getElementById("title");
   const oldImage = document.getElementById("title-image");
   const newImage = document.getElementById("q1-img");
   const newText = document.getElementById("q1-text")
-  
-  oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
 function goToQ2() {
@@ -20,15 +32,7 @@ function goToQ2() {
   const oldImage = document.getElementById("q1-img");
   const newImage = document.getElementById("q2-img");
   const newText = document.getElementById("q2-text");
-  
-  oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
 function goToQ3() {
@@ -36,15 +40,7 @@ function goToQ3() {
   const oldImage = document.getElementById("q2-img");
   const newImage = document.getElementById("q3-img");
   const newText = document.getElementById("q3-text");
-  
-  oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
 function goToQ4() {
@@ -52,15 +48,7 @@ function goToQ4() {
   const oldImage = document.getElementById("q3-img");
   const newImage = document.getElementById("q4-img");
   const newText = document.getElementById("q4-text");
-  
-  oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
 function goToQ5() {
@@ -68,15 +56,7 @@ function goToQ5() {
   const oldImage = document.getElementById("q4-img");
   const newImage = document.getElementById("q5-img");
   const newText = document.getElementById("q5-text");
-  
-  oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
-  newImage.classList.add("loaded");
-  newImage.classList.remove("hidden");
-  oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
-  newText.classList.remove('hidden');
-  newText.classList.add('loaded');
+  hideAndFadeIn(oldText, oldImage, newText, newImage)
 }
 
 function goToResult() {
@@ -84,16 +64,17 @@ function goToResult() {
   const oldImage = document.getElementById("q5-img");
   const leftDiv = document.getElementById("left-half");
   const rightDiv = document.getElementById("right-half");
-
   
   oldText.classList.remove("loaded");
-  oldText.classList.add("hidden");
   oldImage.classList.remove("loaded");
-  oldImage.classList.add("hidden");
+  oldText.classList.add("invisible")
+  oldImage.classList.add("invisible")
   leftDiv.classList.remove("loaded");
-  leftDiv.classList.add("hidden");
   rightDiv.classList.remove("loaded");
-  rightDiv.classList.add("hidden");
+  leftDiv.classList.add("invisible")
+  rightDiv.classList.add("invisible")
+  leftDiv.classList.add("hidden")
+  rightDiv.classList.add("hidden")
   displayResult()
 }
 
@@ -109,7 +90,7 @@ function displayResult() {
     result = document.getElementById("brainfuck");
   } else if (exp === 'no') {
     result = document.getElementById("python");
-  } else if (legacy === 'old') {
+  } else if (legacy === 'old' && platform === "desktop") {
     result = document.getElementById("cobol");
   } else if (platform === 'mobile') {
     result = document.getElementById("swift");
@@ -119,7 +100,10 @@ function displayResult() {
     result = document.getElementById("ruby");
   } else if (platform === 'desktop' && game === 'gamer'){
     result = document.getElementById("c/c#");
+  } else {
+    result = document.getElementById("python")
   }
+
   const resultField = document.getElementById("results")
   resultField.classList.remove('hidden')
   result.classList.remove('hidden')
