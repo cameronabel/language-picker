@@ -41,3 +41,12 @@ Photo by <a href="https://unsplash.com/@safarslife?utm_source=unsplash&utm_mediu
 
 q1
 Photo by <a href="https://unsplash.com/@neilsoniphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Neil Soni</a> on <a href="https://unsplash.com/s/photos/mobile-phone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+q2
+Photo by <a href="https://unsplash.com/@kvncnls?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Kevin Canlas</a> on <a href="https://unsplash.com/s/photos/coders?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+q3
+Photo by <a href="https://unsplash.com/@lorenzoherrera?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lorenzo Herrera</a> on <a href="https://unsplash.com/s/photos/retro-computer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+q4
+Photo by <a href="https://unsplash.com/@alexxsvch?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Alexey Savchenko</a> on <a href="https://unsplash.com/s/photos/gaming?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
